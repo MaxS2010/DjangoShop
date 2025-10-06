@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    {% block links %}
+
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'profile' %}">Shop</a>
+            <a href="{% url 'posts' %}">Posts</a>
+        </nav>
+    </header>
+    <body>        
+        {% block content %}
+        
+        {% endblock %}
+    </body>
+</body>
+</html>
