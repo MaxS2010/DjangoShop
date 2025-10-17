@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'blog_app/css/blog.css' %}">
+{% endblock %}
+
 {% block content %}
     <h1>Main Page</h1>
 {% endblock %}

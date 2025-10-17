@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'post_app/css/post.css' %}">
+{% endblock %}
 
 {% block content %}
     <h1>Post Page</h1>
