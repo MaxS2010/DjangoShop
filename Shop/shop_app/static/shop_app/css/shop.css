@@ -1,0 +1,7 @@
+.no_in_stock {
+    color: red;
+}
+
+.in_stock {
+    color: green;
+}

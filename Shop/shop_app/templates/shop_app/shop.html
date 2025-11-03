@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'shop_app/css/shop.css' %}">
+{% endblock links %}
+
+{% block title %} Shop products {% endblock title %}
+
+{% block content %}
+    <h1>Доступні товари</h1>
+    {% for product in products %}
+        <h2>{{ product.name }}</h2>
+        <p>Ціна: {{ product.price }}</p>
+        {% if product.in_stock %}
+            <p class="in_stock">Є в наявності</p>
+        {% else %}
+            <p class="no_in_stock">Немає в наявності</p>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
