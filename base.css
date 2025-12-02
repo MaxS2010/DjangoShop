@@ -5,38 +5,47 @@
     text-decoration: none;
 }
 
-body {
-    display: flex; 
-    flex-direction: column;
+body, main, main div {
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+}
+
+body {
+    flex-direction: column;
+
     background: rgba(126, 122, 122, 1);
-    padding: 10px;
+
+    height: 100vh;
+    width: 100vw;
+
+    border-radius: 30px;
 }
 
 main {
-    display: flex; 
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    background: rgba(84, 60, 82, 1);
-    border: 2px solid rgba(0, 0, 0, 1);
-    border-radius: 30px;
+
+    gap: 1.6vw;
+
     width: 96vw;
     height: 94vh;
+
+    background: rgba(84, 60, 82, 1);
+
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 30px;
 }
 
 main div{
-    display: flex; 
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     gap: 10px;
+
     width: 33vw;
     height: 86vh;
-    background: rgba(249, 130, 50, 1);  
+
+    background: rgba(249, 130, 50, 1); 
+
     border-radius: 30px;
     border: 2px solid rgba(0, 0, 0, 1)
 }
@@ -49,10 +58,12 @@ main div img{
 
 main div p{
     color: rgba(255, 255, 255, 1);
+
     font-family: Inter;
     font-weight: 400px;
     font-style: Regular;
     font-size: 3vw;
+
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
